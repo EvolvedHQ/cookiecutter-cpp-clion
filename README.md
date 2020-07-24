@@ -1,22 +1,21 @@
-# Template for TDD Code Katas in C++
+# Template for TDD in modern C++
 
-Hey there. This is a cookiecutter template for a simple TDD code kata
-using
+This is a cookiecutter template for a simple C++ project supporting
+TDD, and optimised for the CLion IDE. This template uses
 [Catch2](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md)
-and - optionally -
-[Trompeloeil](https://github.com/rollbear/trompeloeil) and
-[fff](https://github.com/meekrosoft/fff).  It's intended to give you a
-repeatable way of very quickly getting started for a "deliberate
-practice" session with C++.
+as the unit test framework of choice, and is intended to give you a
+very efficient and highly repeatable way of very quickly getting
+started with micro-experimentation in C++.
 
 ## Features of this template
 
-This generates a project for doing a test-driven code kata in C++.
+The template is designed for use with CLion, far less so as a
+standalone CMake-based project:
 
-- Includes Catch2, Trompeloeil and fff libraries
-- Generates a header, "production" source file and an empty test
-- Generates a CMake build which will work on most platforms
-- Has some convenience targets forrunning unit tests
+- Includes Catch2 as the unit test framework
+- Generates a header, a "production" source file and an empty test
+- Generates a CMake build designed to work "out of the box" in CLion
+- Has a launcher pre-configured for running the tests inside CLion
 
 ## Pre-requisites
 
@@ -28,15 +27,7 @@ tool - on most platforms, install using:
 $ pip install cookiecutter
 ```
 
-After the kata project is created, you'll need to generate a build
-using [CMake](https://cmake.org/), and then of course compile, link
-and execute the kata. This is all going to take a fairly complete C++
-development toolchain, and you'll need to figure out how to get this
-configured for your platform, if you don't already have one.
-
-The minimum requirements for building this are basically a modern C++
-compiler (C++17) and standard library. If you need to add
-dependencies, you will have to modify the CMakeLists.txt file.
+After the project is created, you'll open it in CLion. All going well, you should have a project that you can compile, link and run from inside the IDE.
 
 ## Generating your project
 
@@ -57,35 +48,15 @@ This template is intended to be very simple, so cookiecutter will
 prompt you for only two parameters when you are creating your project:
 
 ```
-kata [CodeKata]: 
+project_name [Project name]:
 ```
 
-This is name/title of the Code Kata. Whatever name you provide will be
-capitalised exactly as you enter it. If you use camel case, the name
-of the test file, source file and header will be, for example
-"GameOfLife.cpp", "GameOfLifeTest.cpp" etc. The name will be
-lowercased for the CMake file and the dummy namespace that's generated
-in the header
-
-So, if you prefer CamelCase file names, use something like
-"GameOfLife" as the kata name, or if you prefer snake_case file names,
-then use "game_of_life".
+We don't enforce it, but we'd recommend a single, lowercase word for
+this - the generated artifacts are far neater.
 
 If you want to, you can always add any extra tools you need (static
-analyzers, sanitizers etc) into the CMake file yourself - it's a
-minimal starting point.
-
-```
-Select license:
-1 - GNU General Public License v3
-2 - MIT license
-3 - Apache Software License 2.0
-Choose from 1, 2, 3 [1]: 1
-```
-
-Lets you select the free/open source license for your kata sources. If
-you don't want a license, just delete the contents of the LICENSE file
-after generating the project. Defaults to GPL v3.
+analyzers, sanitizers etc) into the CMake file yourself after
+generating - it's a minimal starting point for simple experimentation.
 
 ## Next steps
 
