@@ -27,7 +27,24 @@ tool - on most platforms, install using:
 $ pip install cookiecutter
 ```
 
-After the project is created, you'll open it in CLion. All going well, you should have a project that you can compile, link and run from inside the IDE.
+After the project is created, you'll open it in CLion. All going well,
+you should have a project that you can compile, link and run from
+inside the IDE.
+
+There are some pre-requisites for CLion too. This assumes you have an
+up-to-date clang and libc++ install, and that you have configured the
+clang toolchain in `File | Settings | Build, Execution, Deployment |
+Toolchains`. We recommend using the option for bundled LLDB too.
+
+When we say "up to date", we currently mean "will support the
+-std=c++2a" option. These assumptions are fixed into the CMake build.
+
+We also assume that if you want to show code coverage in CLion - and
+it's a nice thing to have when doing TDD - then you have congigured
+the `llvm-cov` and `llvm-profdata` paths in the panel `File | Settings
+| Build, Execution, Deployment | Coverage`. If so - when the project
+is opened in CLion - you should be able to run the `All Tests` target
+with coverage without further config.
 
 ## Generating your project
 

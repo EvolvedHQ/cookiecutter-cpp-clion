@@ -4,31 +4,16 @@ Welcome to your new Code Kata.  Test-driven C++ is a lot of fun, and a
 great form of "deliberate practice".  You're almost there - there's
 one more step needed to get up and running.
 
-## Generating the build
+## Open in CLion
 
-You've used a cookiecutter to generate this project, but there's
-another step to get started - this project is based on CMake, so you
-need to use this CMake build to generate a build that will work on
-your system.
+The generated project has just-enough CLion config that you should be
+able to open it, and start running immediately.
 
-This build structure can be done "out of tree" (ie not in this folder
-structure), or use the .build/ folder that's automatically created -
-this is also in the .gitignore by default, if you want
-
-A typical CMake invocation (for Clang, libc++ and C++17) would be:
-
-```
-$ cd .build
-$ cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug
-  -DCMAKE_CXX_FLAGS="-std=c++17 -stdlib=libc++"
-  -DCMAKE_CXX_FLAGS_DEBUG="-fstandalone-debug -ggdb -O0" ..
-```
-
-Then run the makefile as (for example, with 8 threads):
-
-```
-$ make -j8 unit
-```
+After opening, seelct `Run -> Run 'All Tests'` and the project should
+build, run, and display the test results in the Test Results
+panel. You can also try `Run -> Run 'All Tests' with Coverage` if you
+have configured your settings to identify the location of `llvm-cov`
+and `llvm-profdata`.
 
 ## The TDD cycle
 
@@ -90,19 +75,7 @@ There's a great list of Code Kata exercises at
 [a guide book](https://leanpub.com/codingdojohandbook) on code katas,
 with guidance and ideas for running coding dojos.
 
-Also read the manuals for the test libraries we've included in this
-cookiecutter template:
+Also read the manuals for the Catch2 test librarie we've included in
+this cookiecutter template - the modern C++ [Catch2 unit testing
+framework](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md)
 
-- The modern C++ [Catch2 unit testing
-  framework](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md)
-- fff, the [Fake Function
-  Framework](https://github.com/meekrosoft/fff), if you want to write
-  test doubles for functions
-- [Trompeloeil](https://github.com/rollbear/trompeloeil), a mock
-  object framework for C++
-
-## License(s)
-
-The license for this kata can be found in the LICENSE.md file, - but
-be advised that the libraries used have their own terms and licences.
-Please check these in the lib folder.
