@@ -1,0 +1,6 @@
+# Although the cookiecutter generates a starting point workspace file
+# with the requisite launcher configs, you're not generally going to
+# want to keep this file under source control - it contains a great
+# many user-specific settings
+#
+workspace.xml

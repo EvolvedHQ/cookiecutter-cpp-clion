@@ -1,0 +1,4 @@
+{
+    "project_name": "Project name",
+    "_copy_without_render": ["*lib"]
+}
