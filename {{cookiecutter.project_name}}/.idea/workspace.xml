@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="{{cookiecutter.project_name}}" targetName="{{cookiecutter.project_name}}test" />
+      <config projectName="{{cookiecutter.project_name}}" targetName="{{cookiecutter.project_name}}" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="RunManager" selected="Catch.All Tests">
+    <configuration name="All Tests" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="{{cookiecutter.project_name}}" TARGET_NAME="{{cookiecutter.project_name}}test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="{{cookiecutter.project_name}}" RUN_TARGET_NAME="{{cookiecutter.project_name}}test" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Catch.All Tests" />
+    </list>
+  </component>
+</project>
