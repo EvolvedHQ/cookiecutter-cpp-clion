@@ -1,4 +1,4 @@
-# Template for TDD in modern C++
+# Template for TDD in Modern C++
 
 This is a cookiecutter template for a simple C++ project supporting
 TDD, and optimised for the CLion IDE. This template uses
@@ -12,10 +12,11 @@ started with micro-experimentation in C++.
 The template is designed for use with CLion, far less so as a
 standalone CMake-based project:
 
-- Includes Catch2 as the unit test framework
+- Includes a current release of Catch2 as the unit test framework
 - Generates a header, a "production" source file and an empty test
 - Generates a CMake build designed to work "out of the box" in CLion
 - Has a launcher pre-configured for running the tests inside CLion
+- Generates coverage data by default, for coverage views in CLion
 
 ## Pre-requisites
 
@@ -24,7 +25,7 @@ installed](https://github.com/audreyr/cookiecutter). This is a Python
 tool - on most platforms, install using:
 
 ```
-$ pip install cookiecutter
+$ pip3 install cookiecutter
 ```
 
 After the project is created, you'll open it in CLion. All going well,
@@ -58,14 +59,14 @@ $ cookiecutter <path-to-this-template>
 or directly from the GitHub URL where the template lives:
 
 ```
-$ cookiecutter https://github.com/13coders/cookiecutter-kata-catch
+$ cookiecutter https://github.com/EvolvedHQ/cookiecutter-kata-catch
 ```
 
 This template is intended to be very simple, so cookiecutter will
-prompt you for only two parameters when you are creating your project:
+prompt you for only one parameter when you are creating your project:
 
 ```
-project_name [Project name]:
+project_name [cpptdd]:
 ```
 
 We don't enforce it, but we'd recommend a single, lowercase word for

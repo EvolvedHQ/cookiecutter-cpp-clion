@@ -1,13 +1,14 @@
 # Welcome
 
-Welcome to your new Code Kata.  Test-driven C++ is a lot of fun, and a
-great form of "deliberate practice".  You're almost there - there's
-one more step needed to get up and running.
+Welcome to your new project. Test-driven C++ is both an effective
+form of "deliberate practice", and a practical way of experimenting
+with new language features. You're almost there - there's one more
+step needed to get up and running.
 
 ## Open in CLion
 
-The generated project has just-enough CLion config that you should be
-able to open it, and start running immediately.
+The generated project has just enough CLion configuration that you
+should be able to open it, and start running immediately.
 
 After opening, seelct `Run -> Run 'All Tests'` and the project should
 build, run, and display the test results in the Test Results
@@ -17,10 +18,10 @@ and `llvm-profdata`.
 
 ## The TDD cycle
 
-TDD gives you a very fast feedback cycle, and helps you evolve a
-solution incrementally, in very small steps.  TDD gives you feedback
-on your design and lets you make many, small improvements to your
-code. You can do this with confidence because the tests will catch any
+TDD gives you a fast feedback cycle, and helps you evolve a solution
+incrementally, in very small steps. TDD gives you feedback on your
+design and lets you make many, small improvements to your code. You
+can do this with confidence because the tests will catch any
 accidental regression as you apply these refactorings.
 
 TDD uses a cycle of three phases, always starting with RED : a
@@ -78,4 +79,3 @@ with guidance and ideas for running coding dojos.
 Also read the manuals for the Catch2 test librarie we've included in
 this cookiecutter template - the modern C++ [Catch2 unit testing
 framework](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md)
-
