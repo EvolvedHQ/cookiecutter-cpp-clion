@@ -28,10 +28,6 @@ tool - on most platforms, install using:
 $ pip3 install cookiecutter
 ```
 
-After the project is created, you'll open it in CLion. All going well,
-you should have a project that you can compile, link and run from
-inside the IDE.
-
 There are some pre-requisites for CLion too. This assumes you have an
 up-to-date clang and libc++ install, and that you have configured the
 clang toolchain in `File | Settings | Build, Execution, Deployment |
